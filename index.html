@@ -152,6 +152,76 @@ h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);}
 .nav-btn:hover{background:rgba(255,255,255,.22);transform:scale(1.04);}
 .nav-btn:disabled{opacity:.35;cursor:not-allowed;transform:none;}
 #progress{color:rgba(255,255,255,.75);font-size:.87rem;font-weight:700;letter-spacing:.05em;}
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #slideshow {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .story-layout,
+  .vocab-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .story-img img {
+    height: 180px;
+  }
+
+  .voc-img-box img {
+    height: auto;
+  }
+
+  .mc-opt {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .tf-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .tf-buttons {
+    margin-left: 0;
+  }
+
+  #nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  #progress {
+    font-size: 0.8rem;
+  }
+}
 </style>
 </head>
 <body>
